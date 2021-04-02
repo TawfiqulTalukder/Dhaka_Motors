@@ -228,3 +228,21 @@ CREATE TABLE `stock_info` (
   PRIMARY KEY (`sID`),
   KEY `staffID` (`staff_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=latin1;
+
+
+
+-- ----------------------------
+-- Records
+-- ----------------------------
+INSERT INTO `customer` VALUES ('33', 'Priti', '01730176622', 'pritijahan@gmail.com', '12354657686789', 'Priti', '1234');
+INSERT INTO `customer` VALUES ('34', 'Siam', '01716849089', '', '', '', '');
+INSERT INTO `customer` VALUES ('39', '', '', '', '', '', '');
+INSERT INTO `dealers` VALUES ('1', 'Dhaka');
+INSERT INTO `dealers` VALUES ('2', 'Chittagong');
+INSERT INTO `dealers` VALUES ('3', 'Comilla');
+INSERT INTO `dealers` VALUES ('4', 'Rajshahi');
+INSERT INTO `dealers` VALUES ('5', 'Khulna');
+INSERT INTO `discount` VALUES ('7', '2020-05-03', '2020-05-10', '4', 'Active', '2');
+INSERT INTO `distribution` VALUES ('2', '2020-05-07', '2');
+INSERT INTO `distribution` VALUES ('3', '2020-05-07', '3');
+INSERT INTO `distribution` VALUES ('4', '2020-05-07', '5');
