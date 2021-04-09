@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
+ include 'layouts/head.php';
+ protect_page_redirect();
+?>
 
     <div class="content">
       <div class="row" style="margin-top: 50px">
@@ -36,8 +33,16 @@
     								<div id="errorMessege" style="color:red">
 
 
-                      	<!-- ................................... -->
-
+                      <?php
+											if(isset($_GET['error2']) == true){
+												echo 'Login First';
+											}
+											else if(isset($_GET['error1']) == true){
+												echo 'Wrong Username or Password';
+											}else if(isset($_GET['error3']) == true){
+												echo 'Authentication failed';
+											}
+										?>
 
     								</div>
     							</div>
@@ -52,6 +57,7 @@
     	</div>
     </div>
 
-
-  </body>
-</html>
+    
+<?php
+  include 'layouts/foot.php';
+?>
