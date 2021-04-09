@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
+ include 'layouts/head.php';
+ protect_page();
+?>
 
     <div class="content">
       <div class="row" style="margin-top: 50px">
@@ -30,9 +27,12 @@
     								<div id="errorMessege">
 
 
+                      <?php
 
-                      <!-- ................................... -->
-
+											if(isset($_GET['error1']) == true){
+												echo 'Wrong Old Password entered';
+											}
+										?>
 
 
     								</div>
@@ -58,5 +58,6 @@
     </div>
 
 
-  </body>
-</html>
+  <?php
+   include 'layouts/foot.php';
+  ?>
