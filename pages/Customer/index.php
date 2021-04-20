@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php
+  include 'layout/head.php';
+?>
 
 
     <div class="container">
@@ -25,8 +21,7 @@
       <!-- update password -->
 
 
-      <!-- .......................... -->
-
+      <?php if(isset($_GET['done']) == true){?>
 
         <div class="alert alert-success alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -35,7 +30,7 @@
         </div>
 
 
-        
+        <?php }?>
 
         <div class="row">
           <div class="col-md-12">
@@ -125,5 +120,6 @@
     <!-- /.container -->
 
 
-  </body>
-</html>
+<?php
+include 'layout/foot.php';
+?>
